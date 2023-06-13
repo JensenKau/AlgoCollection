@@ -93,7 +93,7 @@ class ArrayList:
             self.pointer -= 1
     
     
-    def removeAt(self, index: int) -> Any:
+    def remove_at(self, index: int) -> Any:
         if index >= 0 and index <= self.pointer:
             i = index
             while i < self.pointer:
