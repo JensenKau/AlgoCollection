@@ -14,10 +14,17 @@ class LomutoPartition:
                 array[i], array[pointer] = array[pointer], array[i]
         
         pointer += 1
-        array[i], array[-1] = array[-1], array[i]
+        array[pointer], array[-1] = array[-1], array[pointer]
     
         return pointer
     
 
 if __name__ == "__main__":
-    pass
+    array = [7, 6, 1, 7, 9, 8, 9, 8, 8, 8, 8, 3, 3, 10, 7, 10, 6, 10, 10, 4]
+    
+    print(array)
+    
+    res = LomutoPartition.partition(array)
+    
+    print(array)
+    print(res)
