@@ -20,11 +20,4 @@ class LomutoPartition:
     
 
 if __name__ == "__main__":
-    array = [7, 6, 1, 7, 9, 8, 9, 8, 8, 8, 8, 3, 3, 10, 7, 10, 6, 10, 10, 4]
-    
-    print(array)
-    
-    res = LomutoPartition.partition(array)
-    
-    print(array)
-    print(res)
+    pass

@@ -18,6 +18,9 @@ class DNFLomutoPartition:
         
         left = pointer
         
+        while left - 1 >= 0 and array[left - 1] == pivot:
+            left -= 1
+        
         for i in range(len(array)):
             if array[i] == pivot:
                 left -= 1
@@ -26,7 +29,6 @@ class DNFLomutoPartition:
             if i >= left - 1:
                 break
             
-    
         return left, pointer
     
 
