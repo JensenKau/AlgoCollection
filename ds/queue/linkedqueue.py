@@ -26,7 +26,7 @@ class LinkedQueue:
     def enqueue(self, value: Any) -> None:
         current = LinkedQueue.LinkedNode(value)
         
-        if self.head is None:
+        if self.tail is None:
             self.head = current
             self.tail = current
         else:
